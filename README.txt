@@ -4,7 +4,7 @@ Donate link: http://www.lifeisfood.it/
 Tags: comments, spam, facebook comments, social comments, social comment, wordpress integrated social comments, facebook comment
 Requires at least: 4.0.1
 Tested up to: 4.2.2
-Stable tag: 1.0.4
+Stable tag: 1.0.5
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -39,12 +39,15 @@ At the moment NO! we are working hard to develope this function and the spam fun
 
 == Screenshots ==
 
-1. This screen shot description corresponds to screenshot-1.(png|jpg|jpeg|gif). Note that the screenshot is taken from
-the /assets directory or the directory that contains the stable readme.txt (tags or trunk). Screenshots in the /assets
-directory take precedence. For example, `/assets/screenshot-1.png` would win over `/tags/4.3/screenshot-1.png`
-(or jpg, jpeg, gif).
+1. This is the overview of the Settings panel that this plugin will add to your Wordpress comments section.
+2. Now you can see how the plugin replace wordpress comments with facebook comments (At the moment we are working to allow you to choose what you want! :) )
+3. The plugin will add a Facebook comments type and you can filter it on the normal wordpress comments page.
+4. We will highlights the Facebook comments with the classic blue bar on the left of it. 
 
 == Changelog ==
+
+=1.0.5=
+* Added some screenshots.
 
 = 1.0.4 =
 * Added comment type Facebook on wordpress with filter on comment page
