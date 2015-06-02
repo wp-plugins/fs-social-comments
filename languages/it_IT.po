@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"POT-Creation-Date: 2015-06-02 10:35+0100\n"
-"PO-Revision-Date: 2015-06-02 10:35+0100\n"
+"POT-Creation-Date: 2015-06-02 23:43+0100\n"
+"PO-Revision-Date: 2015-06-02 23:44+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: it_IT\n"
@@ -15,7 +15,7 @@ msgstr ""
 "X-Poedit-KeywordsList: __;_e\n"
 "X-Poedit-SearchPath-0: .\n"
 
-#: admin/class-fs-social-comments-admin.php:121
+#: admin/class-fs-social-comments-admin.php:149
 msgid "Settings"
 msgstr ""
 
@@ -28,19 +28,35 @@ msgstr ""
 "disponibili. ATTENZIONE: Cancellare o moderare i commenti "
 "dall'amministrazione di wordpress non avrà effetto sui commenti di facebook"
 
-#: admin/partials/fs-social-comments-options.php:19
+#: admin/partials/fs-social-comments-options.php:9
+msgid "General Settings"
+msgstr "Impostazioni generali"
+
+#: admin/partials/fs-social-comments-options.php:12
+msgid "Hide default comments"
+msgstr "Nascondi i commenti default di wordpress"
+
+#: admin/partials/fs-social-comments-options.php:21
+msgid "Facebook Settings"
+msgstr "Impostazioni Facebook"
+
+#: admin/partials/fs-social-comments-options.php:24
+msgid "Enable Facebook comments"
+msgstr "Abilita i commenti di facebook"
+
+#: admin/partials/fs-social-comments-options.php:40
 msgid "language code"
 msgstr "Codice lingua"
 
-#: admin/partials/fs-social-comments-options.php:25
+#: admin/partials/fs-social-comments-options.php:47
 msgid "Save Changes"
 msgstr ""
 
-#: admin/partials/fs-social-comments-options.php:124
+#: admin/partials/fs-social-comments-options.php:146
 msgid "sidebar title"
 msgstr "Cosa stiamo facendo?"
 
-#: admin/partials/fs-social-comments-options.php:126
+#: admin/partials/fs-social-comments-options.php:148
 msgid "sidebar content"
 msgstr ""
 "1 - Integrazione della funzione di moderazione commenti dall'amministrazione "
@@ -51,11 +67,11 @@ msgstr ""
 "attivabili direttamente dalle impostazioni del plugin<br />\n"
 "4 - Traduzioni..."
 
-#: admin/partials/fs-social-comments-options.php:129
+#: admin/partials/fs-social-comments-options.php:151
 msgid "sidebar title donate"
 msgstr "Aiutaci a finire"
 
-#: admin/partials/fs-social-comments-options.php:131
+#: admin/partials/fs-social-comments-options.php:153
 msgid "sidebar content donate"
 msgstr ""
 "Aiutaci a continuare lo sviluppo di questo plugin, basta poco da parte tua."

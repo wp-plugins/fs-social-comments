@@ -16,7 +16,7 @@
  * Plugin Name:       Fs Social Comments
  * Plugin URI:        http://www.lifeisfood.it/
  * Description:       this plugin will help you to synchronize facebook comments with wordpress integrated comments .We are currently in beta, so functions like delete and spam at the moment are not available. 
- * Version:           1.1.0
+ * Version:           1.1.1
  * Author:            Fabio Sirchia
  * Author URI:        http://www.lifeisfood.it/
  * License:           GPL-2.0+
