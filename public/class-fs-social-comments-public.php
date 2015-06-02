@@ -99,7 +99,8 @@ class Fs_Social_Comments_Public {
 		 */
 		
 		wp_enqueue_script( "jquery", "https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js", array( '' ), $this->version, false );
-		wp_enqueue_script( "bootstrap", "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js", array( 'jquery' ), $this->version, false );
+// 		wp_enqueue_script( "bootstrap", "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js", array( 'jquery' ), $this->version, false );
+		wp_enqueue_script( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'js/tab.js', array( 'jquery' ), $this->version, true );
 		wp_enqueue_script( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'js/fs-social-comments-public.js', array( 'jquery' ), $this->version, true );
 
 	}
@@ -123,6 +124,40 @@ class Fs_Social_Comments_Public {
 		        accessToken = '<?php echo $session->getAccessToken(); ?>';
 		    //]]> </script>
 		<?php }
+	
+	public function fs_remove_facebook_comments_from_default($comments){
+		$cleanedComments = array();
+		foreach ($comments as $thecomment){
+			if($thecomment->comment_type != "Facebook"){
+				$cleanedComments[] = $thecomment;		
+			}
+		}
+		return $cleanedComments;
+	}
+	
+	public function	fs_get_comments_number($count, $post_id){
+		$comment_args = array(
+		'order'   => 'ASC',
+		'orderby' => 'comment_date_gmt',
+		'status'  => 'approve',
+		'post_id' => $post_id,
+		);
+		
+		if ( $user_ID ) {
+			$comment_args['include_unapproved'] = array( $user_ID );
+		} elseif ( ! empty( $comment_author_email ) ) {
+			$comment_args['include_unapproved'] = array( $comment_author_email );
+		}
+		
+		$comments = get_comments( $comment_args );
+		$cleanedComments = 0;
+		foreach ($comments as $thecomment){
+			if($thecomment->comment_type != "Facebook"){
+				$cleanedComments++;
+			}
+		}
+		return $cleanedComments;
+	}
 	
 	public function fs_comments_template($theme_template) {
 		$theme_template =  plugin_dir_path( __FILE__ ) . 'partials/fs-social-comments-public-display.php';

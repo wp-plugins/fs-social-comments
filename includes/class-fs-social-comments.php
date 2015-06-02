@@ -188,6 +188,9 @@ class Fs_Social_Comments {
 		$this->loader->add_action( 'wp_ajax_fs_social_comments_register_comment', $plugin_public, 'fs_comment_insert' );
 		$this->loader->add_action( 'wp_ajax_nopriv_fs_social_comments_register_comment', $plugin_public, 'fs_comment_insert' );
 		
+		
+		$this->loader->add_filter("comments_array", $plugin_public, "fs_remove_facebook_comments_from_default");
+		$this->loader->add_filter("get_comments_number", $plugin_public, "fs_get_comments_number",10,2);
 		$this->loader->add_filter("comments_template", $plugin_public, "fs_comments_template");
 
 	}
