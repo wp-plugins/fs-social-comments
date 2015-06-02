@@ -6,7 +6,28 @@
 </p>
 <form method="post" action="options.php" class="input-group">
     <?php settings_fields( 'fs-comments-opt-group' ); ?>
+    <h2><?php _e("General Settings", 'fs-social-comments')?></h2>
     <table class="form-table">
+        <tr valign="top">
+        <th scope="row"><?php _e("Hide default comments", 'fs-social-comments')?></th>
+        <td><input class="form-control" type="checkbox" name="fs_social_comments_hide_default" <?php if(get_option('fs_social_comments_hide_default')):?>checked<?php endif;?> /></td>
+        </tr>
+        <tr valign="top">
+        <th scope="row">Wordpress Label</th>
+        <td><input class="form-control" type="text" name="fs_social_comments_wordpress_label" value="<?php echo get_option('fs_social_comments_wordpress_label'); ?>" /></td>
+        </tr>
+    </table>
+    <hr>
+    <h2><?php _e("Facebook Settings", 'fs-social-comments')?></h2>
+    <table class="form-table">
+    	<tr valign="top">
+        <th scope="row"><?php _e("Enable Facebook comments", 'fs-social-comments')?></th>
+        <td><input class="form-control" type="checkbox" name="fs_social_comments_enable_facebook" <?php if(get_option('fs_social_comments_enable_facebook')):?>checked<?php endif;?> /></td>
+        </tr>
+        <tr valign="top">
+        <th scope="row">Facebook Label</th>
+        <td><input class="form-control" type="text" name="fs_social_comments_facebook_label" value="<?php echo get_option('fs_social_comments_facebook_label'); ?>" /></td>
+        </tr>
         <tr valign="top">
         <th scope="row">Facebook app id</th>
         <td><input class="form-control" type="text" name="fs_social_comments_facebook_app_id" value="<?php echo get_option('fs_social_comments_facebook_app_id'); ?>" /></td>
@@ -20,6 +41,7 @@
         <td><input type="text" name="fs_social_comments_lang_code" value="<?php echo get_option('fs_social_comments_lang_code'); ?>" /> <p>en_EN or it_IT or ...</p></td>
         </tr>
     </table>
+    <hr>
     
     <p class="submit">
     	<input type="submit" class="button-primary" value="<?php _e('Save Changes') ?>" />
