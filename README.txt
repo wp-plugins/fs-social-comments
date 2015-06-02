@@ -46,7 +46,7 @@ At the moment NO! we are working hard to develope this function and the spam fun
 
 == Changelog ==
 
-=1.0.5=
+= 1.0.5 =
 * Added some screenshots.
 
 = 1.0.4 =
