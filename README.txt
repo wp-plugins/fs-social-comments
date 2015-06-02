@@ -4,7 +4,7 @@ Donate link: http://www.lifeisfood.it/
 Tags: comments, spam, facebook comments, social comments, social comment, wordpress integrated social comments, facebook comment
 Requires at least: 4.0.1
 Tested up to: 4.2.2
-Stable tag: 1.0.5
+Stable tag: trunk
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
