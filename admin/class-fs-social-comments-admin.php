@@ -113,6 +113,15 @@ class Fs_Social_Comments_Admin {
 	public function fs_register_settings() { // whitelist options
 		register_setting( 'fs-comments-opt-group', 'fs_social_comments_facebook_app_id' );
 		register_setting( 'fs-comments-opt-group', 'fs_social_comments_facebook_app_secret' );
+		register_setting( 'fs-comments-opt-group', 'fs_social_comments_lang_code', array( $this, 'default_language_code' ) );
+	}
+	
+	public function default_language_code($theCode){
+		$theCode = trim($theCode);
+		if($theCode == ""){
+			$theCode = "en_EN";
+		}
+		return $theCode;
 	}
 	
 	
@@ -122,6 +131,11 @@ class Fs_Social_Comments_Admin {
 	
 	public function fs_social_comments_options() {
 		include plugin_dir_path( __FILE__ ) . 'partials/fs-social-comments-options.php';
+	}
+	
+	public function fs_add_facebook_comment_type($commentTypeArray){
+		$commentTypeArray["facebook"] = "Facebook";
+		return $commentTypeArray; 
 	}
 	
 	public function fs_delete_comment($comment_id){

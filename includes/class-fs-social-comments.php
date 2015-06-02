@@ -160,6 +160,8 @@ class Fs_Social_Comments {
 		/*registrazione delle options*/
 		$this->loader->add_action( 'admin_menu', $plugin_admin, 'fs_register_settings' );
 		
+		/*registrazione delle options*/
+		$this->loader->add_filter( 'admin_comment_types_dropdown', $plugin_admin, 'fs_add_facebook_comment_type' );
 // 		$this->loader->add_action( 'delete_comment', $plugin_admin, 'fs_delete_comment' );
 
 	}
