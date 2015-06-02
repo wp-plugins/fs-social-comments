@@ -18,7 +18,7 @@
   var js, fjs = d.getElementsByTagName(s)[0];
   if (d.getElementById(id)) return;
   js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/it_IT/sdk.js#xfbml=1&version=v2.3&cookie=true&appId=<?php echo get_option("fs_social_comments_facebook_app_id")?>";
+  js.src = "//connect.facebook.net/<?php echo get_option('fs_social_comments_lang_code');?>/sdk.js#xfbml=1&version=v2.3&cookie=true&appId=<?php echo get_option("fs_social_comments_facebook_app_id")?>";
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
 <input type="hidden" value="<?php echo get_the_ID();?>" id="commentPostId" />
