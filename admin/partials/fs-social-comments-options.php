@@ -15,6 +15,10 @@
         <th scope="row">Facebook app secret</th>
         <td><input type="text" name="fs_social_comments_facebook_app_secret" value="<?php echo get_option('fs_social_comments_facebook_app_secret'); ?>" /></td>
         </tr>
+        <tr valign="top">
+        <th scope="row"><?php _e("language code", 'fs-social-comments');?></th>
+        <td><input type="text" name="fs_social_comments_lang_code" value="<?php echo get_option('fs_social_comments_lang_code'); ?>" /> <p>en_EN or it_IT or ...</p></td>
+        </tr>
     </table>
     
     <p class="submit">

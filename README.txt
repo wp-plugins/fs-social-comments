@@ -4,7 +4,7 @@ Donate link: http://www.lifeisfood.it/
 Tags: comments, spam, facebook comments, social comments, social comment, wordpress integrated social comments, facebook comment
 Requires at least: 4.0.1
 Tested up to: 4.2.2
-Stable tag: 1.0.2
+Stable tag: 1.0.3
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -45,6 +45,11 @@ directory take precedence. For example, `/assets/screenshot-1.png` would win ove
 (or jpg, jpeg, gif).
 
 == Changelog ==
+
+= 1.0.3 =
+* Added comment type Facebook on wordpress with filter on comment page
+* Added Language option for facebook comment
+* Added facebook color on comment page for facebook comments
 
 = 1.0.1 =
 * Readme revision.
