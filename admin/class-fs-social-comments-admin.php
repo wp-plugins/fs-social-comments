@@ -111,9 +111,29 @@ class Fs_Social_Comments_Admin {
 	}
 	
 	public function fs_register_settings() { // whitelist options
+		register_setting( 'fs-comments-opt-group', 'fs_social_comments_hide_default' );
+		register_setting( 'fs-comments-opt-group', 'fs_social_comments_enable_facebook' );
 		register_setting( 'fs-comments-opt-group', 'fs_social_comments_facebook_app_id' );
 		register_setting( 'fs-comments-opt-group', 'fs_social_comments_facebook_app_secret' );
 		register_setting( 'fs-comments-opt-group', 'fs_social_comments_lang_code', array( $this, 'default_language_code' ) );
+		register_setting( 'fs-comments-opt-group', 'fs_social_comments_facebook_label', array( $this, 'default_facebook_label' ) );
+		register_setting( 'fs-comments-opt-group', 'fs_social_comments_wordpress_label', array( $this, 'default_wordpress_label' ) );
+	}
+	
+	public function default_facebook_label($theLabel){
+		$theLabel = trim($theLabel);
+		if($theLabel == ""){
+			$theLabel = "Facebook";
+		}
+		return $theLabel;
+	}
+	
+	public function default_wordpress_label($theLabel){
+		$theLabel = trim($theLabel);
+		if($theLabel == ""){
+			$theLabel = "Wordpress";
+		}
+		return $theLabel;
 	}
 	
 	public function default_language_code($theCode){

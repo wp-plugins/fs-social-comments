@@ -1,10 +1,9 @@
 === Fs Social Comments ===
 Contributors: fabio.sirchia
-Donate link: http://www.lifeisfood.it/
 Tags: comments, spam, facebook comments, social comments, social comment, wordpress integrated social comments, facebook comment
 Requires at least: 4.0.1
 Tested up to: 4.2.2
-Stable tag: trunk
+Stable tag: 1.1.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -45,6 +44,18 @@ At the moment NO! we are working hard to develope this function and the spam fun
 4. We will highlights the Facebook comments with the classic blue bar on the left of it. 
 
 == Changelog ==
+
+= 1.1.2 =
+* Removed dionate link
+
+= 1.1.1 =
+* Italian translation
+
+= 1.1.0 =
+* Added wordpress default comments
+* Added Tab system for comments
+* Added label for tabs
+* Possibility to deactivate facebook
 
 = 1.0.5 =
 * Added some screenshots.
