@@ -46,7 +46,7 @@ At the moment NO! we are working hard to develope this function and the spam fun
 == Changelog ==
 
 = 1.1.2 =
-* Removed dionate link
+* Removed donation link
 
 = 1.1.1 =
 * Italian translation
